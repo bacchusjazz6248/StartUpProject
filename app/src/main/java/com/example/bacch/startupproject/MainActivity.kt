@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
 
         val runnable = object : Runnable {
             override fun run(){
-                timeValue++
+                timeValue += 1
                 timeToText(timeValue)?.let {
                     timeText.text = it
                 }
